@@ -1,0 +1,713 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- For IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- For Resposive Device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chimia în alimentație</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="56x56" href="{% static 'img/logo/logo2.png' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+    <!-- Main style sheet -->
+    <!-- responsive style sheet -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+
+    <!-- Fix Internet Explorer ______________________________________-->
+
+    <!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="vendor/html5shiv.js"></script>
+			<script src="vendor/respond.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+    <div class="main-page-wrapper">
+
+        <!-- 
+			=============================================
+				Theme Header
+			============================================== 
+		-->
+        <header class="theme-main-header">
+            <div class="container">
+                <!-- ========================= Theme Feature Page Menu ======================= -->
+                <nav class="navbar float-right theme-main-menu one-page-menu">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                        	<a href="{% url 'main-home' %}" class="logo float-left tran4s"><img src="{% static 'img/logo/logo2.png' %}" style="height: 50px; width: 50px;" alt="Logo"></a>
+                            <li class="active"><a href="#home">Acasa</a></li>
+                            <li><a href="#about-us">Despre</a></li>
+                            <li><a href="#service-section">Alimente rele</a></li>
+                            <li><a href="#project-section">Alimente bune</a></li>
+                            <li><a href="#contact-section">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </nav>
+                <!-- /.theme-feature-menu -->
+            </div>
+        </header>
+        <!-- /.theme-main-header -->
+
+        <!--
+			=====================================================
+				Theme Main SLider
+			=====================================================
+		-->
+        <div id="home" class="banner">
+            <div class="rev_slider_wrapper">
+                <!-- START REVOLUTION SLIDER 5.0.7 auto mode -->
+                <div id="main-banner-slider" class="rev_slider video-slider" data-version="5.0.7">
+                    <ul>
+
+                        <!-- SLIDE1  -->
+                        <li data-index="rs-280" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-title="" data-description="">
+                            <!-- MAIN IMAGE -->
+
+                            <img src="{% static 'img/home/food1.jpg' %}" alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="100" data-scalestart="140">
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-58','-58','0','-50']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">
+                                <h1>Chimia în alimentație</h1>
+                            </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-05','-05','63','0']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">
+                                <h6>"The only thing I like better than talking about food is eating."</h6>
+                            </div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','52','125','80']" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="3000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
+                                <a href="{% url 'main-home' %}" class="project-button hvr-bounce-to-right">Citește mai multe</a>
+                            </div>
+
+                        </li>
+
+                        <!-- SLIDE2  -->
+                        <li data-index="rs-20" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{% static 'img/home/food2.jpg' %}" data-rotate="0" data-saveperformance="off" data-title="" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="{% static 'img/home/food2.jpg' %}" alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="100" data-scalestart="140">
+                            <!-- LAYERS -->
+
+                            <!-- BACKGROUND VIDEO LAYER -->
+                            <div class="rs-background-video-layer" data-forcerewind="on" data-volume="mute" data-videowidth="100%" data-videoheight="100%" data-videomp4="video/Drink-Wine.mp4" data-videopreload="preload" data-videoloop="loopandnoslidestop" data-forceCover="1" data-aspectratio="16:9" data-autoplay="true" data-autoplayonlyfirsttime="false" data-nextslideatend="true"></div>
+
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-58','-33','-33','-100']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">
+                                <h1>Chimia în alimentație</h1>
+                            </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-05','93','93','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">
+                                <h6>"The only thing I like better than talking about food is eating."</h6>
+                            </div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','185','185','105']" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="3000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
+                                <a href="{% url 'main-home' %}" class="project-button hvr-bounce-to-right">Citește mai multe</a>
+                            </div>
+                        </li>
+
+                        <!-- SLIDE3  -->
+                        <li data-index="rs-18" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{% static 'img/home/food2.jpg' %}" data-rotate="0" data-saveperformance="off" data-title="" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="{% static 'img/home/food2.jpg' %}" alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="100" data-scalestart="140">
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-58','-33','-33','-100']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">
+                                <h1>Chimia în alimentație</h1>
+                            </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-05','93','93','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">
+                                <h6>"The only thing I like better than talking about food is eating."</h6>
+                            </div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','185','185','105']" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="3000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
+                                <a href="{% url 'main-home' %}" class="project-button hvr-bounce-to-right">Citește mai multe</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- END REVOLUTION SLIDER -->
+        </div>
+        <!--  /#banner -->
+
+        <!--
+			=====================================================
+				About us Section
+			=====================================================
+		-->
+        <section id="about-us">
+            <div class="container">
+                <div class="theme-title">
+                    <h2>Importanța alimentației</h2>
+                    <p>Prin alimentatie ne asiguram substantele nutritive - proteine, glucide, lipide, minerale si vitamine.</p>
+                </div>
+                <!-- /.theme-title -->
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="single-about-content">
+                            <div class="icon round-border tran3s">
+                                <img src="{% static 'img/logo/1.png' %}"/>
+                            </div>
+                            <h5><a href="#" class="tran3s">Apa</a></h5>
+                            <p>Apa reprezinta un component important al produselor alimentare de origine vegetala si animala.Ea se gaseste în proportii foarte variabile (0,1...peste 95 %) în toate produsele alimentare. </p>
+                        </div>
+                        <!-- /.single-about-content -->
+                    </div>
+                    <!-- /.col -->
+
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="single-about-content">
+                            <div class="icon round-border tran3s">
+                                <img src="{% static 'img/logo/legume.png' %}" class="md3" />
+                            </div>
+                            <h5><a href="#" class="tran3s">Fructe și legume</a></h5>
+                            <p>Atat fructele cat si legumele constituie o sursa impotanta de elemente nutritive, cele mai importante fiind vitaminele si mineralele.Este recomandat consumul zilnic de fructe si legume.</p>
+                        </div>
+                        <!-- /.single-about-content -->
+                    </div>
+                    <!-- /.col -->
+
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="single-about-content">
+                            <div class="icon round-border tran3s">
+                                <img src="{% static 'img/logo/3.png' %}" class="md"/>
+                            </div>
+                            <h5><a href="#" class="tran3s">Lipide</a></h5>
+                            <p>Lipidele sunt esteri ai alcoolilor cu acizi grasi. Ele sunt insolubile în apa, dar solubile în solventi organici (proprietate folosita pentru extragerea lor cu eter, benzen etc., respectiv determinarea indirecta prin metoda Soxhlet).</p>
+                        </div>
+                        <!-- /.single-about-content -->
+                    </div>
+                    <!-- /.col -->
+
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="single-about-content">
+                            <div class="icon round-border tran3s">
+                                <img src="{% static 'img/logo/4jr.png' %}" class="md1" />
+                            </div>
+                            <h5><a href="#" class="tran3s">Proteine</a></h5>
+                            <p>Valoarea biologica a proteinelor unui aliment este data de continutul în aminoacizi esentiali si de raportul dintre acestia, prin comparatie cu cerintele organismului.</p>
+                        </div>
+                        <!-- /.single-about-content -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /#about-us -->
+
+        <!--
+			=====================================================
+				Service Section
+			=====================================================
+		-->
+        <div id="service-section">
+            <div class="container">
+                <div class="theme-title">
+                    <h2>Alimente rele</h2>
+                    <p>Mai există în ziua de astăzi alimente sănătoase? O întrebare la care se răspunde cu greu. Trebuie să fim atenţi la ceea ce cumpărăm şi să avem speranţa că vom ajunge să mâncăm şi ceva mai puţin chimizat decât o facem la ora actuală.</p>
+                </div>
+                <!-- /.theme-title -->
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="single-service-content" style="background-image: url({% static 'img/rele/zahar1.jpg' %}); background-repeat: no-repeat; background-position: center;  display: block; margin-left: auto; margin-right: auto;  background-size: 100% 100%;">
+                            <div class="icon-heading tran3s">           
+                                <h6><a href="#" class="tran3s">Zahar</a></h6>
+                            </div>
+                            <p style="font-size: 14px; color: ">O ficatului este de a converti zaharul in grasimi.Daca obisnuiti sa consumati o cantitate prea mare de zahar, ficatul il transforma intr-o cantitate mare de grasimi, ducand la acumularea acestora in jurul organelor vitale. &nbsp;&nbsp;</p>
+                        </div>
+                        <!-- /.single-service-content -->
+                    </div>
+                    <!-- /.col-lg -->
+
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="single-service-content" style="background-image: url({% static 'img/rele/sarea1.jpg' %}); background-repeat: no-repeat; background-position: center;  display: block; margin-left: auto; margin-right: auto;  background-size: 100% 100%;">
+                            <div class="icon-heading tran3s">
+                                <h6><a href="#" class="tran3s">Sarea</a></h6>
+                            </div>
+                            <p style="font-size: 14px;">Corpul necesita sare, insa in cantitate mica.O dieta bogata in sodiu poate duce la aparitia cirozei.Evitati excesul de sare in mancare si evitati consumul de alimente procesate, mezeluri.Acestea sunt cele mai bogate in sare.&nbsp;&nbsp;</p>
+                        </div>
+                        <!-- /.single-service-content -->
+                    </div>
+                    <!-- /.col-lg -->
+
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="single-service-content" style="background-image: url({% static 'img/rele/vodka.jpg' %}); background-repeat: no-repeat; background-position: center;  display: block; margin-left: auto; margin-right: auto;   background-size: 100% 100%;">
+                            <div class="icon-heading tran3s">
+                                <h6><a href="#" class="tran3s">Vodka</a></h6>
+                            </div>
+                            <p>Consumul mare de alcool poate avea consecinte grave asupra ficatului.In timp, poate duce la aparitia steatozei hepatice alcoolice si a cirozei.Este indicat consumul doar la ocazii.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	</p>
+                        </div>
+                        <!-- /.single-service-content -->
+                    </div>
+                    <!-- /.col-lg -->
+
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="single-service-content" style="background-image: url({% static 'img/rele/margarina.jpg' %}); background-repeat: no-repeat; background-position: center;  display: block; margin-left: auto; margin-right: auto;   background-size: 100% 100%;">
+                            <div class="icon-heading tran3s">
+                                <h6><a href="#" class="tran3s">Margarina</a></h6>
+                            </div>
+                            <p>Grăsimile vegetale folosite în margarină sunt hidrogenate şi sunt recunoscute pentru efectul nociv asupra sănătăţii. Studiile arată că grăsimine hidrogenate şi trans cresc riscul de cancer, diabet şi boli de inimă.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                        </div>
+                        <!-- /.single-service-content -->
+                    </div>
+                    <!-- /.col-lg -->
+
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="single-service-content" style="background-image: url({% static 'img/rele/chips2.jpg' %}); background-repeat: no-repeat; background-position: center;  display: block; margin-left: auto; margin-right: auto;   background-size: 100% 100%;" >
+                            <div class="icon-heading tran3s">
+                                <h6 ><a href="#" class="tran3s">Chipsuri</a></h6>
+                            </div>
+                            <p style="font-size: 14px;">Majoritatea chipsurilor, cele din porumb, cartofi, tortilla etc, sunt pline de grasimi hidrogenate.Temperaturile foarte ridicate la care sunt facute expun produsele la formarea de substante carcinogene precum acrilamida.</p>
+                        </div>
+                        <!-- /.single-service-content -->
+                    </div>
+                    <!-- /.col-lg -->
+
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="single-service-content" style="background-image: url({% static 'img/rele/maioneza.jpg' %}); background-repeat: no-repeat; background-position: center;  display: block; margin-left: auto; margin-right: auto;  background-size: 100% 100%;">
+                            <div class="icon-heading tran3s">
+                                <h6><a href="#" class="tran3s">Maioneza</a></h6>
+                            </div>
+                            <p>O lingură de maioneză conţine 90 de calorii, 10 grame de grăsimi saturate şi 90 de miligrame de sodiu (sare). Aşadar este de preferat să nu o consumi decât ocazional şi nu în cantităţi mari.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+                        </div>
+                        <!-- /.single-service-content -->
+                    </div>
+                    <!-- /.col-lg -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#service-section -->
+
+        <!--
+			=====================================================
+				Project Section
+			=====================================================
+		-->
+        <div id="project-section">
+            <div class="container">
+                <div class="theme-title">
+                    <h2>Alimente bune</h2>
+                    <p>Pentru a fi sănătos trebuie să consumi și alimente sănătoase. Pe lângă stilul de viață activ și lipsa exceselor de orice fel, o dietă bazată pe alimente sănătoase contribuie din plin la bună funcționare a organismului, la păstrarea tonusului bun și la menținerea sănătății fizice și psihice</p>
+                </div>
+                <!-- /.theme-title -->
+
+              
+
+                <div class="project-gallery clear-fix" style="padding-top: 6%;">
+                    <div class="mix grid-item photo om dmedia">
+                        <div class="single-img">
+                            <img src="{% static 'img/bune/avocado.jpg' %}" alt="Image" style="height: 260px; width: 370px;">
+                            <div class="opacity">
+                                <div class="border-shape">
+                                    <div>
+                                        <div>
+                                            <h6><a href="#">Avocado</a></h6>
+                                           <p>Avocado este una dintre cele mai bune fructe. O jumătate de avocado, îți aduce 20% din necesarul de fibre pentru o zi întreagă și integral cantiatea de grăsimi sănătoase și omega 3.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.border-shape -->
+                            </div>
+                            <!-- /.opacity -->
+                        </div>
+                        <!-- /.single-img -->
+                    </div>
+                    <!-- /.grid-item -->
+
+                    <div class="mix grid-item web webd dmedia support">
+                        <div class="single-img">
+                            <img src="{% static 'img/bune/afine.jpg' %}" alt="Image" style="height: 260px; width: 370px;">
+                            <div class="opacity">
+                                <div class="border-shape">
+                                    <div>
+                                        <div>
+                                            <h6><a href="#">Afine</a></h6>
+                                           <p>Afinele se numără printre fructele cu cel mai mare număr de antioxidanți. Un plus este faptul că își păstrează toate proprietățile și dacă sunt congelate sau tratate termic.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.border-shape -->
+                            </div>
+                            <!-- /.opacity -->
+                        </div>
+                        <!-- /.single-img -->
+                    </div>
+                    <!-- /.grid-item -->
+
+                    <div class="mix grid-item photo webd support">
+                        <div class="single-img">
+                            <img src="{% static 'img/bune/conopida.jpg' %}" alt="Image" style="height: 260px; width: 370px;">
+                            <div class="opacity">
+                                <div class="border-shape">
+                                    <div>
+                                        <div>
+                                            <h6><a href="#">Conopida</a></h6>
+                                            <p>Conopida este una dintre cele mai sănătoase legume datorită conținutului ridicat de vitamine (B1, B2, B3, B6, B9, C, K, Omega 3, fosfor, potasiu și mulți fitonutrienți).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.border-shape -->
+                            </div>
+                            <!-- /.opacity -->
+                        </div>
+                        <!-- /.single-img -->
+                    </div>
+                    <!-- /.grid-item -->
+
+                    <div class="mix grid-item web om">
+                        <div class="single-img">
+                            <img src="{% static 'img/bune/grau.jpg' %}" alt="Image" style="height: 260px; width: 370px;">
+                            <div class="opacity">
+                                <div class="border-shape">
+                                    <div>
+                                        <div>
+                                            <h6><a href="#">Grâu</a></h6>
+                                            <p> În stare naturală, neprelucrată, grâul este bogat în substanţe nutritive, care însă sunt eliminate prin procesare, pierzându-se până la jumătate din cantitatea de vitamine B1, B2, B3, E, de acid folic, calciu, fosfor, zinc, cupru, fier și fibre.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.border-shape -->
+                            </div>
+                            <!-- /.opacity -->
+                        </div>
+                        <!-- /.single-img -->
+                    </div>
+                    <!-- /.grid-item -->
+
+                    <div class="mix grid-item photo webd dmedia om">
+                        <div class="single-img">
+                            <img src="{% static 'img/bune/migdale.jpg' %}" alt="Image" style="height: 260px; width: 370px;">
+                            <div class="opacity">
+                                <div class="border-shape">
+                                    <div>
+                                        <div>
+                                            <h6><a href="#">Migdale</a></h6>
+                                        <p>Deși au o mulțime de calități, trebuie să ai grijă câte mănânci pentru că au un număr foarte ridicat de calorii, unde va la aproximativ 576 pe 100 de grame. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.border-shape -->
+                            </div>
+                            <!-- /.opacity -->
+                        </div>
+                        <!-- /.single-img -->
+                    </div>
+                    <!-- /.grid-item -->
+
+                    <div class="mix grid-item web webd dmedia om">
+                        <div class="single-img">
+                            <img src="{% static 'img/bune/nuci.jpg' %}" alt="Image" style="height: 260px; width: 370px;">
+                            <div class="opacity">
+                                <div class="border-shape">
+                                    <div>
+                                        <div>
+                                            <h6><a href="#">Nuci</a></h6>
+                                        <p>Au un continut mare de grasimi (sanatoase), fibre, proteine, vitamine minerale. Trebuie mestecate bine si, de preferat, hidratate. Se evita prajirea. Pot fi folosite pentru preparate vegane si „de post” („branza”, „lapte” etc.).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.border-shape -->
+                            </div>
+                            <!-- /.opacity -->
+                        </div>
+                        <!-- /.single-img -->
+                    </div>
+                    <!-- /.grid-item -->
+
+                    <div class="mix grid-item photo om support">
+                        <div class="single-img">
+                            <img src="{% static 'img/bune/pepene.jpg' %}" alt="Image" style="height: 260px; width: 370px;">
+                            <div class="opacity">
+                                <div class="border-shape">
+                                    <div>
+                                        <div>
+                                            <h6><a href="#">Pepene</a></h6>
+                                           <p>Fiecare 100 de grame din acest fruct al îngerilor conţine 30 de calorii, 1 gram de fibre, 10 grame de zahăr, 1 gram de proteine, vitamina A, C, E, D, niacină, tiamină, vitamina B6, B12, acid pantotenic şi numeroase minerale precum fierul, calciul, magneziul, manganul, potasiul, fosforul, zincul, seleniul etc.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.border-shape -->
+                            </div>
+                            <!-- /.opacity -->
+                        </div>
+                        <!-- /.single-img -->
+                    </div>
+                    <!-- /.grid-item -->
+
+                    <div class="mix grid-item web support">
+                        <div class="single-img">
+                            <img src="{% static 'img/bune/lamaie.jpg' %}" alt="Image" style="height: 260px; width: 370px;">
+                            <div class="opacity">
+                                <div class="border-shape">
+                                    <div>
+                                        <div>
+                                            <h6><a href="#">Lămâie</a></h6>
+                                            <p>Lămâia este o sursă foarte bogată în compuşi chimici vindecători, care îmbunătăţesc imunitatea, întăresc vasele de sânge, ajută la vindecarea pielii şi chiar la blocarea dezvoltării anumitor celule care pot declanşa apariţia cancerului.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.border-shape -->
+                            </div>
+                            <!-- /.opacity -->
+                        </div>
+                        <!-- /.single-img -->
+                    </div>
+                    <!-- /.grid-item -->
+
+                    <div class="mix grid-item photo webd dmedia support">
+                        <div class="single-img">
+                            <img src="{% static 'img/bune/mierea.jpg' %}" alt="Image" style="height: 260px; width: 370px;">
+                            <div class="opacity">
+                                <div class="border-shape">
+                                    <div>
+                                        <div>
+                                            <h6><a href="#">Mierea</a></h6>
+                                        <p>Mierea este prea apropiata de zahar pentru a constitui o varianta benefica pentru sanatate daca se depasesc acele cateva lingurite pe zi, tolerabile si in cazul zaharului alb. La fel si siropul de agave, artar sau altele similare.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.border-shape -->
+                            </div>
+                            <!-- /.opacity -->
+                        </div>
+                        <!-- /.single-img -->
+                    </div>
+                    <!-- /.grid-item -->
+
+
+                     <div class="mix grid-item web support">
+                        <div class="single-img">
+                            <img src="{% static 'img/bune/struguri.jpg' %}" alt="Image" style="height: 260px; width: 370px;">
+                            <div class="opacity">
+                                <div class="border-shape">
+                                    <div>
+                                        <div>
+                                            <h6><a href="#">Struguri</a></h6>
+                                            <p>În compoziția strugurilor, în special în strugurii negri, găsim cel mai puternic antioxidant și anume resveratrolul. Acesta declanșează în organism secreția hormonului adiponectină, iar asta împiedică dezvoltarea mai multor tipuri de afecțiuni cardiace și protejează vasele de sânge.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.border-shape -->
+                            </div>
+                            <!-- /.opacity -->
+                        </div>
+                        <!-- /.single-img -->
+                    </div>
+                    <!-- /.grid-item -->
+
+
+
+                     <div class="mix grid-item web support">
+                        <div class="single-img">
+                            <img src="{% static 'img/bune/spanac.jpg' %}" alt="Image" style="height: 260px; width: 370px;">
+                            <div class="opacity">
+                                <div class="border-shape">
+                                    <div>
+                                        <div>
+                                            <h6><a href="#">Spanac</a></h6>
+                                         <p>Având în vedere că are numai 23 de calorii pe 100 de grame, poți să-l mănânci ori de câte ori vrei. Doctorii recomandă însă ca acesta să se regăsească în dieta ta cel puțin odată pe săptămână.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.border-shape -->
+                            </div>
+                            <!-- /.opacity -->
+                        </div>
+                        <!-- /.single-img -->
+                    </div>
+                    <!-- /.grid-item -->
+
+
+
+
+                     <div class="mix grid-item web support">
+                        <div class="single-img">
+                            <img src="{% static 'img/bune/peste.jpg' %}" alt="Image" style="height: 260px; width: 370px;">
+                            <div class="opacity">
+                                <div class="border-shape">
+                                    <div>
+                                        <div>
+                                            <h6><a href="#">Peste</a></h6>
+                                            <p>Desi putine persoane acorda pestelui un loc primordial in meniul zilnic, aceasta carne foarte sanatoasa protejeaza sanatatea inimii si a sistemului cardiovascular, gratie grasimilor esentiale omega-3 pe care le contine. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.border-shape -->
+                            </div>
+                            <!-- /.opacity -->
+                        </div>
+                        <!-- /.single-img -->
+                    </div>
+                    <!-- /.grid-item -->
+
+                </div>
+                <!-- /.project-gallery -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#project-section -->
+
+     
+		
+        <!--
+			=====================================================
+				Contact Section
+			=====================================================
+		-->
+        <div id="contact-section">
+            <div class="container">
+                <div class="clear-fix contact-address-content">
+                    <div class="">
+                        <div class="left-side row">
+                            <h2>Informații de contact</h2>
+                           
+
+                            <ul>
+                                <li>
+                                    <div class="icon tran3s round-border p-color-bg"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                                    <h6>Address</h6>
+                                    <p>Sos. Pantelimon nr. 355, Sector 2, Bucureşti</p>
+                                </li>
+                                <li>
+                                    <div class="icon tran3s round-border p-color-bg"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                                    <h6>Phone</h6>
+                                    <p>+0212 551 265</p>
+                                </li>
+                                <li>
+                                    <div class="icon tran3s round-border p-color-bg"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                                    <h6>Email</h6>
+                                    <p>liceulteoreticlucianblaga@yahoo.ro</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.left-side -->
+                    </div>
+                    <!-- /.col- -->
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                     
+                    <!-- End of .alert_wrapper -->
+                </div>
+                <!-- /.send-message -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#contact-section -->
+
+
+
+        <!--
+			=====================================================
+
+
+				Footer
+			=====================================================
+		-->
+        <footer>
+            <div class="container">
+                <a href="index.html" class="logo"><img src="{% static 'img/logo/logo2.png' %}" alt="Logo" style="height: 150px; width: 150px;"></a>
+
+                <ul>
+                    <li><a href="#" class="tran3s round-border"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="tran3s round-border"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="tran3s round-border"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="tran3s round-border"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+
+                    
+                </ul>
+
+                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Cipp & Vlad All rights reserved</p>
+            </div>
+        </footer>
+
+        <!-- =============================================
+				Loading Transition
+				============================================== -->
+        <div id="loader-wrapper">
+            <div id="preloader_1">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Scroll Top Button -->
+        <button class="scroll-top tran3s p-color-bg">
+            <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+        </button>
+
+        <!-- Js File_________________________________ -->
+
+        <!-- j Query -->
+        <script type="text/javascript" src="{% static 'vendor/jquery.2.2.3.min.js' %}"></script>
+        <!-- Bootstrap JS -->
+        <script type="text/javascript" src="{% static 'vendor/bootstrap/bootstrap.min.js' %}"></script>
+
+        <!-- Vendor js _________ -->
+
+        <!-- revolution -->
+        <script src="{% static 'vendor/revolution/jquery.themepunch.tools.min.js' %}"></script>
+        <script src="{% static 'vendor/revolution/jquery.themepunch.revolution.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'vendor/revolution/revolution.extension.slideanims.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'vendor/revolution/revolution.extension.layeranimation.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'vendor/revolution/revolution.extension.navigation.min.js' %}"></script>
+
+        <script type="text/javascript" src="{% static 'vendor/revolution/revolution.extension.kenburn.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'vendor/revolution/revolution.extension.actions.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'vendor/revolution/revolution.extension.video.min.js' %}"></script>
+        <!-- Google map js -->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ8VrXgGZ3QSC-0XubNhuB2uKKCwqVaD0&callback=goMap" type="text/javascript"></script>
+        <!-- Gmap Helper -->
+        <script src="{% static 'vendor/gmaps.min.js' %}"></script>
+        <!-- owl.carousel -->
+        <script type="text/javascript" src="{% static 'vendor/owl-carousel/owl.carousel.min.js' %}"></script>
+        <!-- mixitUp -->
+        <script type="text/javascript" src="{% static 'vendor/jquery.mixitup.min.js' %}"></script>
+        <!-- Progress Bar js -->
+        <script type="text/javascript" src="{% static 'vendor/skills-master/jquery.skills.js' %}"></script>
+        <!-- Validation -->
+        <script type="text/javascript" src="{% static 'vendor/contact-form/validate.js' %}"></script>
+        <script type="text/javascript" src="{% static 'vendor/contact-form/jquery.form.js' %}"></script>
+
+        <!-- Theme js -->
+        <script type="text/javascript" src="{% static 'js/theme.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/map-script.js' %}"></script>
+
+    </div>
+    <!-- /.main-page-wrapper -->
+</body>
+
+</html>

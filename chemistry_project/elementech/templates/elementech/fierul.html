@@ -1,0 +1,443 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>Fierul</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'elementech/fonts/icomoon/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'main_site/image/elemente.png' %}" type="image/x-icon">
+
+    <link rel="stylesheet" href="{% static 'elementech/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'elementech/css/bootstrap-datepicker.css' %} ">
+    <link rel="stylesheet" href="{% static 'elementech/css/jquery.fancybox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'elementech/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'elementech/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'elementech/fonts/flaticon/font/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'elementech/css/aos.css' %}">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="{% static 'elementech/css/style.css' %}">
+
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    
+    <div class="site-wrap" id="home-section">
+
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+
+
+
+      <header class="site-navbar site-navbar-target" role="banner">
+
+        <div class="container">
+          <div class="row align-items-center position-relative">
+
+            <div class="col-3 ">
+              <div class="site-logo">
+                <a href="index.html" class="font-weight-bold">Fierul</a>
+              </div>
+            </div>
+
+            <div class="col-9  text-right">
+              
+
+              <span class="d-inline-block d-lg-block"><a href="#" class="text-white site-menu-toggle js-menu-toggle py-5 text-white"><span class="icon-menu h3 text-white"></span></a></span>
+
+              
+
+              <nav class="site-navigation text-right ml-auto d-none d-lg-none" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav ml-auto ">
+                  <li class="active"><a href="#" class="nav-link">Fierul</a></li>
+                  <li><a href="{% url 'magneziul-home' %}" class="nav-link">Magneziul</a></li>
+                  <li><a href="{% url 'siliciul-home' %}" class="nav-link">Siliciul</a></li>
+                  <li><a href="{% url 'manganul-home' %}" class="nav-link">Manganul</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            
+          </div>
+        </div>
+
+      </header>
+
+    <div class="ftco-blocks-cover-1">
+      <div class="site-section-cover overlay" style="background-image: url({% static 'elementech/images/steel.jpg  ' %})">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-7 text-center">
+              <h1 class="mb-4 text-white">Fierul</h1>
+              <p class="mb-4">"Nimeni nu poate distruge fierul, dar propria rugină poate, nimeni nu poate distruge o persoană, dar propria sa minte poate."</p>
+              <p><a href="{% url 'main-home' %}" class="btn btn-primary btn-outline-white py-3 px-5">Proiectele noastre</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<div class="site-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h2 class="h4 mb-4">Fierul este...</h2>
+            <p>...un mineral vital pentru bună funcționare a hemoglobinei, o proteină necesară pentru transportul oxigenului în sânge. Totodată, fierul are un rol și în alte procese importante din corp.<br><br>Aproape 6% din fierul din organism face parte din anumite proteine, care sunt esențiale pentru respirație și pentru metabolismul energetic, însă acest fier este și o componentă a enzimelor implicate în sinteză colagenului și în anumiți neurotransmițători. Fierul este necesar, totodată, pentru bună funcționare a sistemului imunitar.</p>
+          </div>
+          <div class="col-md-4">
+            <img src="{% static 'elementech/images/este.jpg' %}" alt="Image" class="img-fluid">
+          </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-7 mx-auto text-center">
+            <h2 class="heading-29190">Rolul fierului</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="service-29128 text-center">
+              <span class="d-block wrap-icon">
+                <span class="icon-desktop_mac"></span>
+              </span>
+              <h3>Energic</h3>
+              <p>O cantitate insuficientă de fier în alimentația ta poate afecta modul în care corpul uman folosește energia.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="service-29128 text-center">
+              <span class="d-block wrap-icon">
+                <span class="icon-desktop_mac"></span>
+              </span>
+              <h3>Transport</h3>
+              <p>Fierul transporta oxigenul către mușchi, creier și este crucial atât pentru performanțele mintale, cât și pentru performanțele fizice.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="service-29128 text-center">
+              <span class="d-block wrap-icon">
+                <span class="icon-desktop_mac"></span>
+              </span>
+              <h3>Catalizator al unor reacții în organism</h3>
+              <p>Un catalizator este o substanță care mărește viteză unei reacții chimice, fără că această să fie modificată.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="service-29128 text-center">
+              <span class="d-block wrap-icon">
+                <span class="icon-desktop_mac"></span>
+              </span>
+              <h3>Reglarea sistemului imunitar</h3>
+              <p>Fierul este implicat în stimularea proliferării celulelor imune, în special a limfocitelor T, asociate cu generarea unui răspuns la infecție.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<div class="site-section" style="margin-top: -6%;">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <h2 class="h4 mb-4">Necesarul de fier</h2>
+            <p>
+Aportul scăzut de fier în timpul sarcinii crește riscul de naștere prematură și de greutate mică la naștere în ceea ce privește bebelușul.<br><br>
+
+Femeile însărcinate, care au deficit de fier, ar putea fi mai predispuse să dezvolte infecții, deoarece fierul susține și funcționarea sistemului imunitar. <br><br>
+Conform Oficiului de Suplimente Alimentare al Național Institutes of Health din America, cantitatea de fier (exprimată în miligrame) consumată zilnic de un individ ar trebui să arate astfel:
+</p>
+          </div>
+          <div class="col-md-4">
+            <img src="{% static 'elementech/images/necesar.jpg' %}" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-md-4">
+            
+            <h2 class="h4 mb-4">Cantitatea de fier</h2>
+
+            <div class="progress-wrap mb-4">
+              <div class="d-flex">
+                <span>&nbsp;0 - 6 luni</span>
+                <span class="ml-auto">0.27 mg bărbat/femeie</span>
+              </div>
+              <div class="progress rounded-0" style="height: 7px;">
+                <div class="progress-bar" role="progressbar" style="width: 2%;" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress-wrap mb-4">
+              <div class="d-flex">
+                <span>&nbsp; 7 - 12 luni</span>
+                <span class="ml-auto">11 mg bărbat/femeie</span>
+              </div>
+              <div class="progress rounded-0" style="height: 7px;">
+                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress-wrap mb-4">
+              <div class="d-flex">
+                <span>&nbsp; 1 - 3 ani</span>
+                <span class="ml-auto">7 mg bărbat/femeie</span>
+              </div>
+              <div class="progress rounded-0" style="height: 7px;">
+                <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress-wrap mb-4">
+              <div class="d-flex">
+                <span>&nbsp; 4 - 8 ani</span>
+                <span class="ml-auto">10 mg bărbat/femeie</span>
+              </div>
+              <div class="progress rounded-0" style="height: 7px;">
+                <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+
+            <div class="progress-wrap mb-4">
+              <div class="d-flex">
+                <span>&nbsp; 9 - 13 ani</span>
+                <span class="ml-auto">8 mg bărbat/femeie</span>
+              </div>
+              <div class="progress rounded-0" style="height: 7px;">
+                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+
+
+            <div class="progress-wrap mb-4">
+              <div class="d-flex">
+                <span>&nbsp; 14 - 18 ani</span>
+                <span class="ml-auto">11 mg bărbat | 15 mg femeie</span>
+              </div>
+              <div class="progress rounded-0" style="height: 7px;">
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+
+        
+
+            <div class="progress-wrap mb-4">
+              <div class="d-flex">
+                <span>&nbsp; 19 - 50 ani</span>
+                <span class="ml-auto">8 mg bărbat | 18 mg femeie</span>
+              </div>
+              <div class="progress rounded-0" style="height: 7px;">
+                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+
+            <div class="progress-wrap mb-4">
+              <div class="d-flex">
+                <span>&nbsp; 50+ ani</span>
+                <span class="ml-auto">8 mg bărbat/femeie</span>
+              </div>
+              <div class="progress rounded-0" style="height: 7px;">
+                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="site-section">
+      <div class="container">
+
+        <div class="row mb-5">
+          <div class="col-md-7 mx-auto text-center">
+            <h2 class="heading-29190">Surse de fier</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="item web">
+              <a href="work-single.html" class="item-wrap" data-fancybox="gal">
+                <span class="icon-add"></span>
+                <img class="img-fluid" src="{% static 'elementech/images/carnea.jpg' %}">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="item web">
+              <a href="work-single.html" class="item-wrap" data-fancybox="gal">
+                <span class="icon-add"></span>
+                <img class="img-fluid" src="{% static 'elementech/images/spanac.jpg' %}">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="item web">
+              <a href="work-single.html" class="item-wrap" data-fancybox="gal">
+                <span class="icon-add"></span>
+                <img class="img-fluid" src="{% static 'elementech/images/seminte.jpg' %}">
+              </a>
+            </div>
+          </div>
+
+         
+
+        </div>
+
+        
+      </div>
+    </div> <!-- END .site-section -->
+
+ <div class="site-section" style="margin-top: -5%;">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h2 class="h4 mb-4">Ce se întâmplă în organism în cazul carenței de fier?</h2>
+            <p>Atunci când corpul nu are suficient fier, produce mai puțînă hemoglobină. Asta înseamnă că organismul va primi din ce în ce mai puțîn oxigen, ceea ce va afecta în mod negativ bună funcționare a organelor.</p>
+            Simptomele carenței de fier includ:<br>
+
+• Oboseală<br>
+• Rezistență scăzută la orice tip efort<br>
+• Lipsa puterii de concentrare<br>
+• Stare de agitație<br>
+• Inapetență (lipsa poftei de mâncare)<br>
+• Dispnee (greutate în respirație)<br>
+• Dureri de cap<br>
+• Dureri toracice<br>
+• Ritm cardiac crescut<br>
+• Amețeli<br>
+• Insomnii<br>
+• Paloarea tegumentelor (pielii) și mucoaselor<br>
+• Modificări la nivelul unghiilor, părului sau pielii (părul devine uscat și friabil, unghiile devin concave) <br>
+
+          </div>
+          <div class="col-md-4">
+            <img src="{% static 'elementech/images/necesar.jpg' %}" alt="Image" class="img-fluid">
+          </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+   
+
+    <div class="site-section" style="margin-top: -5%;">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-7 mx-auto text-center">
+            <h2 class="heading-29190">Ceva interesant</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+
+            <a href="https://vimeo.com/191947042" data-fancybox  class="btn-video_38929">
+              <span><span class="icon-play"></span></span>
+              <img src="{% static 'elementech/images/interesant.jpg' %}" alt="Image" class="img-fluid">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <h2 class="footer-heading mb-3">-David Lloyd George-</h2>
+                <p>A stat pe gard atât de mult, încât fierul i-a intrat în suflet.</p>
+          </div>
+          <div class="col-lg-8 ml-auto">
+            <div class="row">
+              <div class="col-lg-6 ml-auto">
+                <h2 class="footer-heading mb-4">Mai multe despre noi</h2>
+                <ul class="list-unstyled">
+                  <li><a href="{% url 'main-home' %}">Proiectele noastre</a></li>
+                  <li><a href="#">Contactează-ne</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <h2 class="footer-heading mb-4">Contact</h2>
+                <div class="social_29128 white mb-5">
+                  <a href="#"><span class="icon-facebook"></span></a>  
+                  <a href="#"><span class="icon-instagram"></span></a>  
+                  <a href="#"><span class="icon-twitter"></span></a>  
+                 </div>
+                <h2 class="footer-heading mb-4">Noutăți</h2>
+                <form action="#" class="d-flex" class="subscribe">
+                  <input type="text" class="form-control mr-3" placeholder="Email">
+                  <input type="submit" value="Send" class="btn btn-primary">
+                </form>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center" style="margin-bottom: -6%;">
+          <div class="col-md-12">
+            <div class="border-top">
+             <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Cipp & Vlad All rights reserved</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    </div>
+
+    <script src="{% static 'elementech/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'elementech/js/jquery-migrate-3.0.0.js' %}"></script>
+    <script src="{% static 'elementech/js/popper.min.js' %}"></script>
+    <script src="{% static 'elementech/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'elementech/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'elementech/js/jquery.sticky.js' %}"></script>
+    <script src="{% static 'elementech/js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'elementech/js/jquery.animateNumber.min.js' %}"></script>
+    <script src="{% static 'elementech/js/jquery.fancybox.min.js' %}"></script>
+    <script src="{% static 'elementech/js/jquery.stellar.min.js' %}"></script>
+    <script src="{% static 'elementech/js/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'elementech/js/bootstrap-datepicker.min.js' %}"></script>
+    <script src="{% static 'elementech/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'elementech/js/aos.js' %}"></script>
+
+    <script src="{% static 'elementech/js/main.js' %}"></script>
+
+  </body>
+
+</html>
+
