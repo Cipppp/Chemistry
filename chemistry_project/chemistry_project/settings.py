@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'alcoolul.apps.AlcoolulConfig',
     'main_site.apps.MainSiteConfig',
     'elementech.apps.ElementechConfig',
     'rolul_apei.apps.RolulApeiConfig',
