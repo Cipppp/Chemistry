@@ -23,5 +23,7 @@ urlpatterns = [
     path('', include('elementech.urls')),
     path('', include('main_site.urls')),
     path('', include('alcoolul.urls')),
+    path('', include('compusi_halogenati.urls')),
+    path('', include('dinamita.urls')),
 
 ]

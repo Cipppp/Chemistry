@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'dinamita.apps.DinamitaConfig',
+    'compusi_halogenati.apps.CompusiHalogenatiConfig',
     'alcoolul.apps.AlcoolulConfig',
     'main_site.apps.MainSiteConfig',
     'elementech.apps.ElementechConfig',

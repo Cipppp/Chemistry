@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i" rel="stylesheet">
-    <link rel="shortcut icon" href="{% static 'main_site/image/apa.png' %}" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'alcoolul/images/image.png' %}" type="image/x-icon">
 
 
     <link rel="stylesheet" href="{% static 'alcoolul/css/open-iconic-bootstrap.min.css' %}">
@@ -37,7 +37,7 @@
 
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="#">Alcoolul<span></span></a>
+	      <a class="navbar-brand" href="{% url 'main-home' %}">Alcoolul<span></span></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> 
 	      </button>
@@ -47,7 +47,7 @@
 	          <li class="nav-item active"><a href="#" class="nav-link">Alcoolul</a></li>
             <li class="nav-item"><a href="{% url 'metanol-home' %}" class="nav-link">Metanol</a></li>
             <li class="nav-item"><a href="{% url 'etanol-home' %}" class="nav-link">Etanol</a></li>
-            <li class="nav-item"><a href="{% url 'metanol-home' %}" class="nav-link">Glicerol</a></li>
+            <li class="nav-item"><a href="{% url 'glicerol-home' %}" class="nav-link">Glicerol</a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -59,16 +59,16 @@
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-end" data-scrollax-parent="true">
           <div class="col-md-8 text-justify ftco-animate mb-5 pr-lg-4">
-          	<a href="https://www.youtube.com/watch?v=9iMGFqMmUFs" class="icon-wrap popup-vimeo d-flex align-items-center mt-4">
+          	<a href="https://www.youtube.com/watch?v=vkpz7xFTWJo" class="icon-wrap popup-vimeo d-flex align-items-center mt-4">
             	<div class="icon d-flex align-items-center justify-content-center">
             		<span class="ion-ios-play"></span>
             	</div>
             	<div class="heading-title ml-3">
-	            	<span>Ce s-ar întâmpla dacă nu ați bea apă</span>
+	            	<span>Creierul tau sub influența alcoolului</span>
             	</div>
             </a>
-          	<h1 class="mb-0">"A fi un pește fără apă este greu, dar așa evoluezi."</h1>
-            <h3 class="subheading mb-4 pb-1">-Kumail Nanjiani-</h3>
+          	<h1 class="mb-0">"Alcohol may be man's worst enemy, but the bible says love your enemy."</h1>
+            <h3 class="subheading mb-4 pb-1">-Frank Sinatra-</h3>
           </div>
         </div>
       </div>
@@ -144,7 +144,7 @@
         <div class="row d-flex no-gutters">
 
           <div class="col-md-6 d-flex flex-column align-items-stretch">
-            <div class="img d-flex align-self-stretch align-items-center justify-content-center" style="background-image:url({% static 'alcoolul/images/drink-water2.png' %});">
+            <div class="img d-flex align-self-stretch align-items-center justify-content-center" style="background-image:url({% static 'alcoolul/images/cantitate.jpg' %});">
               
             </div>
           </div>
@@ -238,7 +238,7 @@
         <div class="row d-flex no-gutters">
           <div class="col-md-14 px-md-5 py-4 py-md-5">
             <div class="row justify-content-start pt-md-3 pb-md-3">
-              <div class="col-md-12 heading-section ftco-animate px-md-5 py-4 py-md-5">
+              <div class="col-md-12 heading-section ftco-animate px-md-5 py-md-5">
                 <h2 class="mb-4">Efectele alcoolului asupra corpului</h2>
                 <p>Alcoolul este absorbit în fluxul sanguin prin vasele mici de sânge din pereții stomacului și ai intestinului subțire. În doar câteva minute de la consumul de alcool, acesta ajunge de la stomac la creier, unde efectele își fac simțită prezența foarte rapid, încetinind acțiunea celulelor nervoase.<br><br>
                   Aproximativ 20% din alcool este absorbit prin stomac. Restul de 80% este absorbit prin intestinul subțire.
@@ -329,7 +329,7 @@
       <div class="container">
         <div class="row d-flex no-gutters">
           <div class="col-md-6 d-flex flex-column align-items-stretch">
-            <div class="img d-flex align-self-stretch align-items-center justify-content-center" style="background-image:url({% static 'alcoolul/images/body.jpg' %});">
+            <div class="img d-flex align-self-stretch align-items-center justify-content-center" style="background-image:url({% static 'alcoolul/images/alcoolsofat.jpg' %});">
               
             </div>
           </div>
@@ -360,15 +360,13 @@ Alcoolul alterează gândirea și judecata unei persoane. Persoanele care se afl
         </div>
     		<div class="row d-flex sermon-wrap">
   				<div class="col-md-6 d-flex align-items-stretch ftco-animate">
-  					<div class="img" style="background-image: url({% static 'alcoolul/images/step.jpg' %});"></div>
+  					<div class="img" style="background-image: url({% static 'alcoolul/images/curiozitati.jpg' %});"></div>
   				</div>
   				<div class="col-md-6 py-4 text ftco-animate">
   					
 						<p>Binge drinking este practica de a consuma alcool în cantități excesive cu o anumită ocazie, de obicei cinci sau mai multe băuturi deodată în cazul bărbaților sau 4 sau mai multe băuturi deodată în cazul femeilor. 
 </p>
-						<p class="mt-4 btn-customize">
-							<a href="https://www.youtube.com/watch?v=Nu6A-eZ05fE&t=30s" class="btn btn-primary px-4 py-3 mr-md-2 popup-vimeo"><span style="padding-right: 5px;"></span>Drink water</a> 
-						</p>
+						
   				</div>
     		</div>
     	</div>

@@ -12,4 +12,13 @@ def elemente_chimice(request):
 
 def chimia_in_alimentatie(request):
 	return render(request, 'main/home.html')
+
+def dinamita(request):
+	return render(request, 'dinamita/home.html')
+
+def alcoolul(request):
+	return render(request, 'alcoolul/alcoolul_home.html')
+
+def compusi_halogenati(request):
+	return render(request, 'compusi_halogenati/compusi_halogenati.html')
 # Create your views here.

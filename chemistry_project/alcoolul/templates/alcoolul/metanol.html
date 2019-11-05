@@ -2,24 +2,23 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Alcoolul</title>
+
+<head>
+    <title>Metanol</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i" rel="stylesheet">
-    <link rel="shortcut icon" href="{% static 'main_site/image/apa.png' %}" type="image/x-icon">
-
+    <link rel="shortcut icon" href="{% static 'alcoolul/images/image.png' %}" type="image/x-icon">
 
     <link rel="stylesheet" href="{% static 'alcoolul/css/open-iconic-bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'alcoolul/css/animate.css' %}">
-    
+
     <link rel="stylesheet" href="{% static 'alcoolul/css/owl.carousel.min.css' %}">
     <link rel="stylesheet" href="{% static 'alcoolul/css/owl.theme.default.min.css' %}">
     <link rel="stylesheet" href="{% static 'alcoolul/css/magnific-popup.css' %}">
-
 
     <link rel="stylesheet" href="{% static 'alcoolul/css/aos.css' %}">
 
@@ -28,405 +27,252 @@
     <link rel="stylesheet" href="{% static 'alcoolul/css/bootstrap-datepicker.css' %}">
     <link rel="stylesheet" href="{% static 'alcoolul/css/jquery.timepicker.css' %}">
 
-    
     <link rel="stylesheet" href="{% static 'alcoolul/css/flaticon.css' %}">
     <link rel="stylesheet" href="{% static 'alcoolul/css/icomoon.css' %}">
     <link rel="stylesheet" href="{% static 'alcoolul/css/style.css' %}">
-  </head>
-  <body style="overflow-x: hidden;">
+</head>
 
-	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Alcoolul<span></span></a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> 
-	      </button>
+<body style="overflow-x: hidden;">
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="{% url 'alcoolul-home' %}" class="nav-link">Alcoolul</a></li>
-            <li class="nav-item active"><a href="#" class="nav-link">Metanol</a></li>
-            <li class="nav-item"><a href="{% url 'etanol-home' %}" class="nav-link">Etanol</a></li>
-            <li class="nav-item"><a href="{% url 'glicerol-home' %}" class="nav-link">Glicerol</a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-    <!-- END nav -->
-    
-    <div class="hero-wrap js-fullheight" style="background-image: url({% static 'alcoolul/images/bgalcool.jpg' %});">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-end" data-scrollax-parent="true">
-          <div class="col-md-8 text-justify ftco-animate mb-5 pr-lg-4">
-          	<a href="https://www.youtube.com/watch?v=9iMGFqMmUFs" class="icon-wrap popup-vimeo d-flex align-items-center mt-4">
-            	<div class="icon d-flex align-items-center justify-content-center">
-            		<span class="ion-ios-play"></span>
-            	</div>
-            	<div class="heading-title ml-3">
-	            	<span>Ce s-ar întâmpla dacă nu ați bea apă</span>
-            	</div>
-            </a>
-          	<h1 class="mb-0">"A fi un pește fără apă este greu, dar așa evoluezi."</h1>
-            <h3 class="subheading mb-4 pb-1">-Kumail Nanjiani-</h3>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'main-home' %}">Metanol<span></span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="{% url 'alcoolul-home' %}" class="nav-link">Alcoolul</a></li>
+                    <li class="nav-item active"><a href="#" class="nav-link">Metanol</a></li>
+                    <li class="nav-item"><a href="{% url 'etanol-home' %}" class="nav-link">Etanol</a></li>
+                    <li class="nav-item"><a href="{% url 'glicerol-home' %}" class="nav-link">Glicerol</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
+    </nav>
+    <!-- END nav -->
+
+    <div class="hero-wrap js-fullheight" style="background-image: url({% static 'alcoolul/images/bgalcool.jpg' %});">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-end" data-scrollax-parent="true">
+                <div class="col-md-8 text-justify ftco-animate mb-5 pr-lg-4">
+                                       </a>
+                    <h1 class="mb-0">"Alcohol may be man's worst enemy, but the bible says love your enemy."</h1>
+                  <h3 class="subheading mb-4 pb-1">-Frank Sinatra-</h3>
+                </div>
+            </div>
+        </div>
     </div>
 
-    
+    <section class="ftco-counter" id="section-counter">
+        <div class="container">
+            <div class="row d-flex no-gutters">
+
+                <div class="col-md-6 px-md-5 py-4 py-md-5">
+                    <div class="row justify-content-start pt-md-3 pb-md-3">
+                        <div class="col-md-12 heading-section ftco-animate">
+                            <h2 class="mb-4">Metanolul este...</h2>
+                            <p>...un alcool care se sintetizează prin substituirea în molecula de metan a unui atom de hidrogen cu o grupare - OH (hidroxilică). În natură metanolul poate fi întâlnit în plante ca: bumbacul, brânca-ursului, ierburi sau semințe care conțin uleiuri eterice. <br><br>Metanolul mai poate fi obținut prin fermentarea siropului produs din sfecla de zahăr. În procesele de fermentare a fructelor se poate forma metanol prin descompunerea pectinelor. Consumul de metanol poate produce intoxicații grave, acesta poate lua naștere prin distilarea fracționată în mod particular a alcoolului.
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 d-flex flex-column align-items-stretch">
+                    <div class="img d-flex align-self-stretch align-items-center justify-content-center" style="background-image:url({% static 'alcoolul/images/Methanol.png' %});">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <section class="ftco-counter" id="section-counter">
-    	<div class="container">
-    		<div class="row d-flex no-gutters">
-    			
-    			<div class="col-md-6 px-md-5 py-4 py-md-5">
-    				<div class="row justify-content-start pt-md-3 pb-md-3">
-		          <div class="col-md-12 heading-section ftco-animate">
-		            <h2 class="mb-4">Alcoolul este un drog</h2>
-		            <p>Alcoolul este clasificat ca fiind un sedativ, ceea ce înseamnă că încetinește funcțiile vitale ale organismului, ducând la vorbire neclară, pierderea echilibrului, incapacitate de a reacționa în timp util la ceea se întâmplă în jur.<br><br>
-                În ceea ce privește felul în care afectează psihicul, este ca un drog care reduce mult abilitatea unei persoane de a gândi clar și îi alterează felul în care ia decizii.<br><br>
-                Intoxicația cu alcool (supradoza) poate conduce la efecte negative foarte severe: inabilitatea de a simți durerea, stare de inconștiență, sau în cel mai rău caz comă și chiar moarte. Aceste reacții depind de cât de mare este cantitatea de alcool consumată și în cât timp a fost aceasta consumată. 
+        <div class="container">
+            <div class="row d-flex no-gutters">
+                <div class="col-md-14 px-md-5 py-4 py-md-5">
+                    <div class="row justify-content-start pt-md-3 pb-md-3">
+                        <div class="col-md-12 heading-section ftco-animate px-md-5 py-4 py-md-5">
+                            <h2 class="mb-4">Obținere</h2>
+                            <p>
 
-              </p>
-		          </div>
-		        </div>
+                                Metanolul este un produs de bază al chimiei organice și o cantitate semnificativă de alcool este produsă la o scară largă. În 2008, consumul global de metanol a fost de 45 milioane de tone, iar până în 2012 este de așteptat să se ajungă la la o capacitate de producție apropiată de 85 milioane de tone.China este în prezent cel mai mare producător și consumator de metanol. Este de așteptat ca producția chineză în următorii câțiva ani să depășească 60 milioane de tone.
+                                <br>
+                                <br> În timp ce în prezent metanolul este cel mai utilizat în <b>sectorul chimic</b>, folosirea sa în cel <b>al combustibililor</b> înregistrează creșteri importante. În 2008, în China au fost comsumate aproximativ trei milioane de tone de metanol ca un amestec de combustibil. Problemele ce implică extinderea pe scară largă și folosirea în proporții mai mari de metanol în combustibil determină dezvoltarea și a altor componente care sunt compatibile cu acesta.
+                                <br>
+                                <br>
+                                <h4>Distilarea lemnului</h4> Distilarea lemnului (carbonizarea) se realizează industrial în cuptoare închise, la o valoare a temperaturii de 500 °C.
+                                <br>
+                                <br>
 
-	        </div>
+                                <br>
+                                <br>
 
-          <div class="col-md-6 d-flex flex-column align-items-stretch">
-            <div class="img d-flex align-self-stretch align-items-center justify-content-center" style="background-image:url({% static 'alcoolul/images/body.jpg' %});">
-              
+                                <h4>Obținerea din gazul de sinteză</h4> Materia primă - amestecul format dintr-o parte oxid de carbon și două părți de hidrogen (gazul de sinteză) - este trecută sub presiunea de 200-300 atm și o temperatură de 300-400 °C, peste catalizatori (oxid de zinc și oxid de crom). Condițiile de reacție trebuie respectate deoarece materia primă, la alte valori ale parametrilor, se treansformă în benzine sintetice (procedeul Fischer-Tropsch). De asemenea, la presiuni și temperaturi mai ridicate, alături de metanol se mai obțin alcooli superiori, îndeosebi alcool izobutilic. Sinteza metanolul este descrisă de reacția:
+                                <br>
+                                <br>
+
+                                <center>
+                                    <h2>CO + 2CH<sub>2</sub> ⇌  CH<sub>3</sub>OH</h2></center>
+                                <br>
+                                <br> Obținerea gazului de sinteză prin conversia metanului se poate realiza catalitic în prezența oxigenului, a vaporilor de apă și dioxid de carbon. Aburul favorizează trecerea oxidului de carbon în bioxid de carbon, iar în exces de acest compus, echilibrul se deplasează spre formare de CO<sub>2</sub>, o reacție puternic endotermă:
+                                <br>
+                                <br>
+
+                                <center>
+                                    <h2>CH<sub>4</sub> + CO<sub>2</sub> ⇌  2CO + CO<sub>2</sub></h2></center>
+                                <br>
+                                <br>
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
-          </div>
-
         </div>
-    	</div>
     </section>
-
-
-
-
-<section class="ftco-counter" id="section-counter">
-      <div class="container">
-        <div class="row d-flex no-gutters">
-          <div class="col-md-14 px-md-5 py-4 py-md-5">
-            <div class="row justify-content-start pt-md-3 pb-md-3">
-              <div class="col-md-12 heading-section ftco-animate px-md-5 py-4 py-md-5">
-                <h2 class="mb-4">Utilizări</h2>
-                <p>Alcoolii sunt folosiți la scară largă în industrie și știință, drept reactanți, solvenți combustibili. Etanolul și metanolul pot arde creând mai puține substanțe nocive decât benzina sau motorina. Datorită toxicității scăzute și capacității de a dizolva substanțe nepolare, etanolul este folosit deseori ca solvent în medicamente, parfumuri și esențe vegetale, precum vanilia. În sinteza organică, alcoolii apar deseori ca intermediari adaptabili.<br><br>
-                  
-              Etanolul este, de asemenea, folosit frecvent în băuturi după fermentație pentru a evidenția aromele sau pentru a induce intoxicarea euforică numită "beție". Utilizarea etanolului pentru acest scop este interzisă în unele jurisdicții. În asemenea cazuri de consum, alcoolul este un drog psihoactiv, cu un potențial imediat de supradoză, otrăvire și dependență fiziologică (știută ca alcoolism). Alcoolismul a devenit una dintre cele mai comune cauze de dependență (poate după cafeină) din lume. Dependența fiziologică cauzată de alcoolism înseamnă că persoana dependentă trece prin sevraj (sub forma unei dureri de cap cunoscută ca "mahmureală," unei anxietăți crescute, știută ca "friguri" și oboseală sau probleme cu somnul) la încetarea sau descreșterea folosirii.<br><br>
-
-              
-
-              </p>
-
-             
-              </div>
-     
-
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-
-
-
- <section class="ftco-counter" id="section-counter" >
-      <div class="container">
-        <div class="row d-flex no-gutters">
-
-          <div class="col-md-6 d-flex flex-column align-items-stretch">
-            <div class="img d-flex align-self-stretch align-items-center justify-content-center" style="background-image:url({% static 'alcoolul/images/drink-water2.png' %});">
-              
-            </div>
-          </div>
-          <div class="col-md-6 px-md-5 py-4 py-md-5">
-            <div class="row justify-content-start pt-md-3 pb-md-3">
-              <div class="col-md-12 heading-section ftco-animate">
-                <h2 class="mb-4">Cantitatea de alcool din băuturi</h2>
-                <p>Deși este clasificat ca fiind sedativ, cantitatea de alcool consumată determină, de fapt, ce efecte pot apărea asupra organismului și psihicului. Majoritatea oamenilor consumă alcool pentru efectul de relaxare pe care îl dă o doză de bere sau un pahar de vin. Dar dacă o persoană consumă mai mult decât organismul poate metaboliza, intervin efecte total opuse, cum ar fi depresia sau din contră, agitația și agresivitatea.<br><br>
-                  Cantitatea de alcool cel mai des întâlnită în băuturi este:
-</p>
-              </div>
-            </div>
-            <div class="row" >
-              <div class="col-md-3 justify-content-center counter-wrap ftco-animate">
-                <div class="block-18 text-center py-4 mb-4">
-                  <div class="text">
-                    
-                    <strong class="number" ></strong></strong><strong class="number">2-6%</strong>
-                    <span>Bere</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 justify-content-center counter-wrap ftco-animate" >
-                <div class="block-18 text-center py-4 mb-4">
-                  <div class="text">
-                    
-                    <strong class="number"></strong></strong><strong class="number">8-20%</strong>
-                    <span>Vin</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 justify-content-center counter-wrap ftco-animate">
-                <div class="block-18 text-center py-4 mb-4">
-                  <div class="text">
-                    
-                    <strong class="number"></strong><strong class="number">40-47%</strong>
-                    <span>Gin</span>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="col-md-3 justify-content-center counter-wrap ftco-animate">
-                <div class="block-18 text-center py-4 mb-4">
-                  <div class="text">
-                    
-                    <strong class="number"></strong><strong class="number">40%+</strong>
-                    <span>Rom</span>
-                  </div>
-                </div>
-              </div>
-              
-
-              <div class="col-md-3 justify-content-center counter-wrap ftco-animate" style="margin-left: 15%; margin-top: -10%;" >
-                <div class="block-18 text-center py-4 mb-4">
-                  <div class="text">
-                    
-                    <strong class="number"></strong><strong class="number">40-50%</strong>
-                    <span>Vodka</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="col-md-3 justify-content-center counter-wrap ftco-animate" style="margin-left: 10%; margin-top: -10%;">
-                <div class="block-18 text-center py-4 mb-4">
-                  <div class="text">
-                    
-                    <strong class="number"></strong><strong class="number">40-50%</strong>
-                    <span>Whiskey</span>
-                  </div>
-                </div>
-              </div>
-              
-
-              
-
-
-              
-
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
 
     <section class="ftco-counter" id="section-counter">
-      <div class="container">
-        <div class="row d-flex no-gutters">
-          <div class="col-md-14 px-md-5 py-4 py-md-5">
-            <div class="row justify-content-start pt-md-3 pb-md-3">
-              <div class="col-md-12 heading-section ftco-animate px-md-5 py-4 py-md-5">
-                <h2 class="mb-4">Efectele alcoolului asupra corpului</h2>
-                <p>Alcoolul este absorbit în fluxul sanguin prin vasele mici de sânge din pereții stomacului și ai intestinului subțire. În doar câteva minute de la consumul de alcool, acesta ajunge de la stomac la creier, unde efectele își fac simțită prezența foarte rapid, încetinind acțiunea celulelor nervoase.<br><br>
-                  Aproximativ 20% din alcool este absorbit prin stomac. Restul de 80% este absorbit prin intestinul subțire.
-                  <br><br>
-               Alcoolul este dus de către sânge și înspre ficat, care elimină alcoolul din corp printr-un proces numit „metabolizare”, prin care este transformat într-o substanță non-toxică. Ficatul poate metaboliza doar o anumită cantitate de alcool într-un anumit interval de timp, surplusul de cantitate rămânând să circule prin corp. În felul acesta, intensitatea efectelor asupra corpului este direct proporțională cu cantitatea de alcool consumată.<br><br>
+        <div class="container">
+            <div class="row d-flex no-gutters">
+                <div class="col-md-12 px-md-5 py-4 py-md-5">
 
-               Când cantitatea de alcool din sânge depășește un anumit nivel, sistemul respirator este încetinit, cauzând astfel starea de comă sau chiar moarte, deoarece în felul acesta oxigenul nu mai ajunge la creier.
+                    <div class="row justify-content-start pt-md-3 pb-md-3">
+                        <div class="col-md-12 heading-section ftco-animate">
+                            <h2 class="mb-4">Proprietăți</h2>
+                            <p>Structură
+                                <br>
+                                <br>
 
-              </p>
+                                <b>Molecula de metanol este alcătuită dintr-un atom de carbon, unul de oxigen si patru de hidrogen.</b> Ca unități structurale, are o grupare metil ce prezintă o simterie trigonală și una hidroxil. Aceasta este constituită dintr-un atom de hidrogen și unul de oxigen hibridizat sp3 ce are două perechi de electroni liberi. Unghiul dintre carbon, oxigen și atomul de hidrogen este de 108.9 °, valoare apropiată de cea existentă într-un tetraedru (109.47 °), iar cel al grupării metil este de 109 °.
+                                <br>
+                                <br>
 
-             
-              </div>
+                                <b>În stare lichidă, metanolul se prezintă sub forma unor asociații moleculare legate între ele prin intermediul legăturilor de hidrogen</b>,
+                                <br>
+                                <br>
+                                <h2>Proprietăți termochimice</h2>
+                                <br> La temperatura camerei, metanolul este un lichid cu miros pătrunzător, eterat și este toxic. Punctul de fierbere este de 65 °C, iar cel de solidificare este de -97 °C, formând cristale incolore. . Se amestecă cu apa în orice proporții.
+                                <br>
+                                <br> În stare lichidă metanolul este format din asociații moleculare de forma (CH3-OH)<sub>x</sub> legate între ele prin legături de hidrogen, fapt datorat polarității grupei hidroxil.Este solubil în apă și în alți compuși organici, cum ar fi acetonitril, benzen, cloroform, ciclopentan, metacrilat de metil și tetrahidrofuran.
+                                <br>
+                                <br>
 
-              <div class="col-md-6 d-flex flex-column align-items-stretch">
-               <center><h2 class="mb-4" style="font-weight: 700;">Efecte pe termen scurt ale consumului de alcool</h2></center>
-              <ul>
-                <li>Vorbire neclară</li>
-                <li>Vărsături</li>
-                <li>Diaree</li>
-                <li>Lipsă de coordonare a mișcărilor</li>
-                <li>Dureri de cap</li>
-                <li>Respirație dificilă</li>
-                <li>Anemie</li>
-                <li>Comă</li>
-                <li>Leșin</li>
-                <li>Somnolență</li>
+                                <h2>Reactivitate chimică</h2>
+                                <br> pKa-ul metanolului are o valoare de 16. În reacție cu acizi puternici, cum ar fi acidul sulfuric, el se poate protona. Bazele puternice deprotonează molecula de alcool.
+                                <br>
+                                <br>
+                                <b>Reacția acido-bazică a metanolului</b>
+                                <center><img src="{% static 'alcoolul/images/reactie1.png' %}" style="width: 800px;"> </center>
+                                Metanolul arde cu flacără albăstruie folosind dioxid de carbon și apă.
+                            </p>
+                        </div>
+                    </div>
 
-              </ul>
-          </div>
-
-
-           <div class="col-md-6 d-flex flex-column align-items-stretch">
-            
-           <center><h2 class="mb-4" style="font-weight: 700;">Efecte pe termen lung ale consumului de alcool</h2></center>
-              <ul>
-                <li>Vorbire neclară</li>
-                <li>Vărsături</li>
-                <li>Diaree</li>
-                <li>Lipsă de coordonare a mișcărilor</li>
-                <li>Dureri de cap</li>
-                <li>Respirație dificilă</li>
-                <li>Anemie</li>
-                <li>Comă</li>
-                <li>Leșin</li>
-                <li>Somnolență</li>
-
-              </ul>
-          </div>
-
-
-
+                </div>
             </div>
-
-          </div>
         </div>
-      </div>
     </section>
-
-
-
-
-
-    
-
-
-
-
-<section class="ftco-counter" id="section-counter" style="margin-top: 0%">
-      <div class="container">
-        <div class="row d-flex no-gutters">
-
-          <div class="col-md-6 d-flex flex-column align-items-stretch">
-            
-          </div>
-
-          <div class="col-md-6 px-md-5 py-4 py-md-5">
-            
-          
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
 
     <section class="ftco-counter" id="section-counter">
-      <div class="container">
-        <div class="row d-flex no-gutters">
-          <div class="col-md-6 d-flex flex-column align-items-stretch">
-            <div class="img d-flex align-self-stretch align-items-center justify-content-center" style="background-image:url({% static 'alcoolul/images/body.jpg' %});">
-              
+        <div class="container">
+            <div class="row d-flex no-gutters">
+                <div class="col-md-12 px-md-5 py-4 py-md-5">
+                    <div class="row justify-content-start pt-md-3 pb-md-3">
+                        <div class="col-md-12 heading-section ftco-animate  py-4 py-md-5">
+                            <h2 class="mb-4">Aplicații practice</h2>
+                            <p>În industria chimică, metanolul servește ca materie primă sau ca furnizor de energie.
+                                <br>
+                                <h1>Materie primă</h1> Din metanol prin oxidare cu oxigen pe un catalizator de argint se obține formaldehidă:
+                                <br> În 2003, în SUA și Canada, s-au obținut cinci milioane de tone de formaldehidă în valoare de 1,5 miliarde de dolari americani, devenind a cincea importantă producție în Statele Unite. Substanța este folosită pentru fabricarea de uree, fenol și melamină. Aproximativ 50% din totalul de formaldehidă este consumat la fabricarea produselor din lemn. În 2005, China a fost cel mai mare producător mondial, având o capacitate de 11 milioane de tone.
+                                <br>
+                                <br> <center><h2>CH<sub>3</sub> OH + CO → CH<sub>3</sub>COOH</h2></center>
+                                <br>
+                                <br>
+
+                                <center><h4>Anhidrida acetică</h4></center>
+                                <center><h2>CH<sub>3</sub> COOCH<sub>3</sub> + CO → CH<sub>3</sub> COOCOCH<sub>3</sub></h2></center>
+                                <br>
+                                <br> Metanolul poate fi dehidrogenat folosind catalizatori de cupru-dopat pentru a forma <b>formiat de metil.</b>
+                                <br>
+                                <br> <center><h2>2CH<sub>3</sub> OH ⟶ HCO<sub>2</sub> CH<sub>3</sub> + 2H<sub>2</sub></h2></center>
+                                <br>
+                                <br>
+
+                                <h1>Industria energetică</h1>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
-          </div>
-          <div class="col-md-6 px-md-5 py-4 py-md-5">
-            <div class="row justify-content-start pt-md-3 pb-md-3">
-              <div class="col-md-12 heading-section ftco-animate">
-                <h2 class="mb-4">Consumul de alcool și șofatul </h2>
-                <p><span style="color: #ff5050;">Probabilitatea ca un șofer aflat sub influența alcoolului să fie ucis într-un accident rutier este de cel puțin 11 ori mai ridicată</span> decât în cazul șoferilor care nu conduc sub influența alcoolului.><br><br>
-
-Pentru unii oameni această informație nu reprezintă decât o statistică. Însă pentru familiile și prietenii celor care mor în urma unui asemenea accident, ea reprezintă o pierdere tragică.<br><br>
-
-Alcoolul alterează gândirea și judecata unei persoane. Persoanele care se află sub influența alcoolului recunosc fără ezitare că viteza lor de reacție este mult încetinită când consumă alcool și că iau decizii pe care, lucizi fiind, nu le-ar lua niciodată. 
-
-              </p>
-              </div>
-            </div>
-
-          </div>
         </div>
-      </div>
     </section>
-    <section class="ftco-section bg-light">
-    	<div class="container">
-    		<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-12 text-center heading-section heading-section-light ftco-animate">
-            <h2 class="mb-2"><span class="px-4">Ce înseamnă binge drinking („beția ocazională”)?</span></h2>
-          </div>
-        </div>
-    		<div class="row d-flex sermon-wrap">
-  				<div class="col-md-6 d-flex align-items-stretch ftco-animate">
-  					<div class="img" style="background-image: url({% static 'alcoolul/images/step.jpg' %});"></div>
-  				</div>
-  				<div class="col-md-6 py-4 text ftco-animate">
-  					
-						<p>Binge drinking este practica de a consuma alcool în cantități excesive cu o anumită ocazie, de obicei cinci sau mai multe băuturi deodată în cazul bărbaților sau 4 sau mai multe băuturi deodată în cazul femeilor. 
-</p>
-						<p class="mt-4 btn-customize">
-							<a href="https://www.youtube.com/watch?v=Nu6A-eZ05fE&t=30s" class="btn btn-primary px-4 py-3 mr-md-2 popup-vimeo"><span style="padding-right: 5px;"></span>Drink water</a> 
-						</p>
-  				</div>
-    		</div>
-    	</div>
-    </section>
-		
-
-
-		
-
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">"The mind is like water. When it’s turbulent, it’s difficult to see. When it’s calm, everything becomes clear."</h2>
-              <p>-Prasad Mahes-</p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">"The mind is like water. When it’s turbulent, it’s difficult to see. When it’s calm, everything becomes clear."</h2>
+                        <p>-Prasad Mahes-</p>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
-          </div>
-          
-          </div>
         </div>
         <div class="row">
-          <div class="col-md-12 text-center">
+            <div class="col-md-12 text-center">
 
-            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Cipp & Vlad All rights reserved</p>
-          </div>
+                <p>Copyright &copy;
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script> Cipp & Vlad All rights reserved</p>
+            </div>
         </div>
-      </div>
+        </div>
     </footer>
-    
-  
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen">
+        <svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
+        </svg>
+    </div>
 
+    <script src="{% static 'alcoolul/js/jquery.min.js' %}"></script>
+    <script src="{% static 'alcoolul/js/jquery-migrate-3.0.1.min.js' %}"></script>
+    <script src="{% static 'alcoolul/js/popper.min.js' %}"></script>
+    <script src="{% static 'alcoolul/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'alcoolul/js/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'alcoolul/js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'alcoolul/js/jquery.stellar.min.js' %}"></script>
+    <script src="{% static 'alcoolul/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'alcoolul/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'alcoolul/js/aos.js' %}"></script>
+    <script src="{% static 'alcoolul/js/jquery.animateNumber.min.js' %}"></script>
+    <script src="{% static 'alcoolul/js/bootstrap-datepicker.js' %}"></script>
+    <script src="{% static 'alcoolul/js/scrollax.min.js' %}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="{% static 'alcoolul/js/google-map.js' %}"></script>
+    <script src="{% static 'alcoolul/js/main.js' %}"></script>
 
-  <script src="{% static 'alcoolul/js/jquery.min.js' %}"></script> 
-  <script src="{% static 'alcoolul/js/jquery-migrate-3.0.1.min.js' %}"></script>
-  <script src="{% static 'alcoolul/js/popper.min.js' %}"  ></script>
-  <script src="{% static 'alcoolul/js/bootstrap.min.js' %}"></script>
-  <script src="{% static 'alcoolul/js/jquery.easing.1.3.js' %}"></script>
-  <script src="{% static 'alcoolul/js/jquery.waypoints.min.js' %}"></script>
-  <script src="{% static 'alcoolul/js/jquery.stellar.min.js' %}"></script>
-  <script src="{% static 'alcoolul/js/owl.carousel.min.js' %}"></script>
-  <script src="{% static 'alcoolul/js/jquery.magnific-popup.min.js' %}"></script>
-  <script src="{% static 'alcoolul/js/aos.js' %}"></script>
-  <script src="{% static 'alcoolul/js/jquery.animateNumber.min.js' %}"></script>
-  <script src="{% static 'alcoolul/js/bootstrap-datepicker.js' %}"></script>
-  <script src="{% static 'alcoolul/js/scrollax.min.js' %}"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="{% static 'alcoolul/js/google-map.js' %}"></script>
-  <script src="{% static 'alcoolul/js/main.js' %}"></script>
-    
-  </body>
+</body>
+
 </html>

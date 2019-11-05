@@ -3,14 +3,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Alcoolul</title>
+    <title>Etanol</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i" rel="stylesheet">
-    <link rel="shortcut icon" href="{% static 'main_site/image/apa.png' %}" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'alcoolul/images/image.png' %}" type="image/x-icon">
 
 
     <link rel="stylesheet" href="{% static 'alcoolul/css/open-iconic-bootstrap.min.css' %}">
@@ -37,7 +37,7 @@
 
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Alcoolul<span></span></a>
+	      <a class="navbar-brand" href="{% url 'main-home' %}">Etanol<span></span></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> 
 	      </button>
@@ -59,16 +59,9 @@
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-end" data-scrollax-parent="true">
           <div class="col-md-8 text-justify ftco-animate mb-5 pr-lg-4">
-          	<a href="https://www.youtube.com/watch?v=9iMGFqMmUFs" class="icon-wrap popup-vimeo d-flex align-items-center mt-4">
-            	<div class="icon d-flex align-items-center justify-content-center">
-            		<span class="ion-ios-play"></span>
-            	</div>
-            	<div class="heading-title ml-3">
-	            	<span>Ce s-ar întâmpla dacă nu ați bea apă</span>
-            	</div>
-            </a>
-          	<h1 class="mb-0">"A fi un pește fără apă este greu, dar așa evoluezi."</h1>
-            <h3 class="subheading mb-4 pb-1">-Kumail Nanjiani-</h3>
+          	
+          	<h1 class="mb-0">"Alcohol may be man's worst enemy, but the bible says love your enemy."</h1>
+                  <h3 class="subheading mb-4 pb-1">-Frank Sinatra-</h3>
           </div>
         </div>
       </div>
@@ -83,10 +76,10 @@
     			<div class="col-md-6 px-md-5 py-4 py-md-5">
     				<div class="row justify-content-start pt-md-3 pb-md-3">
 		          <div class="col-md-12 heading-section ftco-animate">
-		            <h2 class="mb-4">Alcoolul este un drog</h2>
-		            <p>Alcoolul este clasificat ca fiind un sedativ, ceea ce înseamnă că încetinește funcțiile vitale ale organismului, ducând la vorbire neclară, pierderea echilibrului, incapacitate de a reacționa în timp util la ceea se întâmplă în jur.<br><br>
-                În ceea ce privește felul în care afectează psihicul, este ca un drog care reduce mult abilitatea unei persoane de a gândi clar și îi alterează felul în care ia decizii.<br><br>
-                Intoxicația cu alcool (supradoza) poate conduce la efecte negative foarte severe: inabilitatea de a simți durerea, stare de inconștiență, sau în cel mai rău caz comă și chiar moarte. Aceste reacții depind de cât de mare este cantitatea de alcool consumată și în cât timp a fost aceasta consumată. 
+		            <h2 class="mb-4">Etanolul este...</h2>
+		            <p>...un compus organic din clasa alcoolilor, fiind principalul alcool întâlnit în băuturile alcoolice. Este un lichid volatil, inflamabil și incolor, cu un miros caracteristic. Are formula chimică C<sub>2</sub>H<sub>5</sub>OH, care poate fi scrisă desfășurat CH<sub>3</sub> – CH<sub>2</sub> – OH, fiind din punct de vedere structural alcătuit dintr-un radical etil, legat de o grupă hidroxil. De aceea, este câteodată simbolizat EtOH. <br><br>
+
+Etanolul se obține în majoritate prin fermentația zaharurilor prin intermediul drojdiilor, sau prin procedee petrochimice. Este un drog psihotrop care dă dependență, cauzând o intoxicație acută caracteristică, cunoscută sub numele de beție, când este consumată în cantități mari. Este folosit pe larg ca și solvent, sursă de combustibil și ca materie primă în sinteza altor compuși chimici. 
 
               </p>
 		          </div>
@@ -95,7 +88,7 @@
 	        </div>
 
           <div class="col-md-6 d-flex flex-column align-items-stretch">
-            <div class="img d-flex align-self-stretch align-items-center justify-content-center" style="background-image:url({% static 'alcoolul/images/body.jpg' %});">
+            <div class="img d-flex align-self-stretch align-items-center justify-content-center" style="background-image:url({% static 'alcoolul/images/etanol.jpg' %}); ">
               
             </div>
           </div>
@@ -110,16 +103,27 @@
 <section class="ftco-counter" id="section-counter">
       <div class="container">
         <div class="row d-flex no-gutters">
-          <div class="col-md-14 px-md-5 py-4 py-md-5">
+          <div class="col-md-12 py-4 py-md-5">
             <div class="row justify-content-start pt-md-3 pb-md-3">
-              <div class="col-md-12 heading-section ftco-animate px-md-5 py-4 py-md-5">
-                <h2 class="mb-4">Utilizări</h2>
-                <p>Alcoolii sunt folosiți la scară largă în industrie și știință, drept reactanți, solvenți combustibili. Etanolul și metanolul pot arde creând mai puține substanțe nocive decât benzina sau motorina. Datorită toxicității scăzute și capacității de a dizolva substanțe nepolare, etanolul este folosit deseori ca solvent în medicamente, parfumuri și esențe vegetale, precum vanilia. În sinteza organică, alcoolii apar deseori ca intermediari adaptabili.<br><br>
-                  
-              Etanolul este, de asemenea, folosit frecvent în băuturi după fermentație pentru a evidenția aromele sau pentru a induce intoxicarea euforică numită "beție". Utilizarea etanolului pentru acest scop este interzisă în unele jurisdicții. În asemenea cazuri de consum, alcoolul este un drog psihoactiv, cu un potențial imediat de supradoză, otrăvire și dependență fiziologică (știută ca alcoolism). Alcoolismul a devenit una dintre cele mai comune cauze de dependență (poate după cafeină) din lume. Dependența fiziologică cauzată de alcoolism înseamnă că persoana dependentă trece prin sevraj (sub forma unei dureri de cap cunoscută ca "mahmureală," unei anxietăți crescute, știută ca "friguri" și oboseală sau probleme cu somnul) la încetarea sau descreșterea folosirii.<br><br>
+              <div class="col-md-12 heading-section ftco-animate py-4 py-md-5">
+                <h2 class="mb-4">Proprietăți</h2><br>
+                <h3>Proprietăți fizice</h3>
+
+Se prezintă ca o substanță lichidă incoloră, solubilă în apă în orice proporții. Solubilitatea se datorează grupării hidroxil din molecula alcoolului prin intermediul căreia între moleculele de apă și de alcool se stabilesc legături de hidrogen intermoleculare.
+<br><br>
+<h3>Proprietăți chimice</h3>
+
+<h5>Caracter acid</h5>
+Etanolul, ca toți alcoolii, prezintă un ușor caracter acid dovedit prin reacția sa cu metalele alcaline, iar o reacție tipică este reacția cu sodiul (în amoniac lichid) în urma căreia se formează ionul etoxid și se eliberează protonul din gruparea hidroxil. Protonul se fixează pe perechea de electroni ai oxigenului din apă, generând ionul hidroniu care oferă aciditate soluției respective.
+
+Etanolul nu reacționează cu hidroxizii alcalini, față de fenoli care sunt tot compuși hidroxilici și care reacționează cu hidroxidul de sodiu formând ionul fenoxid. Alte reacții tipice etanolului sunt reacțiile cu acizii carboxilici când rezultă esteri folosiți pe post de aromatizanți.
+
+
+<h5>Oxidare</h5>
+
+Reacția de oxidare a etanolului nu are o importanță practică anume, însă, în corpul uman ea are loc, fiind catalizată de o enzimă din ficat numită alcool-dehidrogenază.Produsul de oxidare al etanolului, acidul acetic, este un nutrient important pentru corpul uman, întrucât reprezintă un precursor pentru acetil coenzima A.
 
               
-
               </p>
 
              
@@ -143,237 +147,41 @@
       <div class="container">
         <div class="row d-flex no-gutters">
 
-          <div class="col-md-6 d-flex flex-column align-items-stretch">
-            <div class="img d-flex align-self-stretch align-items-center justify-content-center" style="background-image:url({% static 'alcoolul/images/drink-water2.png' %});">
+          <div class="col-md-4 d-flex flex-column align-items-stretch">
+            <div class="img d-flex align-self-stretch align-items-center justify-content-center" style="background-image:url({% static 'alcoolul/images/Achievement.jpg' %});">
               
             </div>
           </div>
-          <div class="col-md-6 px-md-5 py-4 py-md-5">
+          <div class="col-md-8 px-md-5 py-4 py-md-5">
             <div class="row justify-content-start pt-md-3 pb-md-3">
               <div class="col-md-12 heading-section ftco-animate">
-                <h2 class="mb-4">Cantitatea de alcool din băuturi</h2>
-                <p>Deși este clasificat ca fiind sedativ, cantitatea de alcool consumată determină, de fapt, ce efecte pot apărea asupra organismului și psihicului. Majoritatea oamenilor consumă alcool pentru efectul de relaxare pe care îl dă o doză de bere sau un pahar de vin. Dar dacă o persoană consumă mai mult decât organismul poate metaboliza, intervin efecte total opuse, cum ar fi depresia sau din contră, agitația și agresivitatea.<br><br>
-                  Cantitatea de alcool cel mai des întâlnită în băuturi este:
+                <h2 class="mb-4">Obținere</h2>
+                <p>
+
+<h4>Hidratarea etilenei</h4>
+Etanolul folosit pentru scopuri industriale, adică cel folosit ca materie primă sau solvent (denumit și etanol sintetic) se obține artificial din materii prime petrochimice, în general prin hidratarea (reacția de hidroliză) catalizată în mediu acid a etilenei:
+
+    C 2 H 4 + H 2 O ⟶ CH 3 CH 2 OH 
+
+Catalizatorul cel mai comun folosit pentru această reacție este acidul fosforic.
+
+<h4>Fermentația alcoolică</h4>
+
+Etanolul din compoziția băuturile alcoolice se obține exclusiv prin fermentația alcoolică. Unele specii de drojdii metabolizează polizaharidele și glucoza, obținându-se etanol și dioxid de carbon:
+
+    C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> ⟶ 2CH<sub>3</sub> CH<sub>2</sub>OH + 2CO<sub>2</sub>
+    C<sub>12</sub>H<sub>22</sub>O<sub>11</sub> + H<sub>2</sub>O ⟶ 4CH<sub>3</sub>CH<sub>2</sub>OH + 4CO<sub>2</sub> 
+
+
 </p>
               </div>
             </div>
-            <div class="row" >
-              <div class="col-md-3 justify-content-center counter-wrap ftco-animate">
-                <div class="block-18 text-center py-4 mb-4">
-                  <div class="text">
-                    
-                    <strong class="number" ></strong></strong><strong class="number">2-6%</strong>
-                    <span>Bere</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 justify-content-center counter-wrap ftco-animate" >
-                <div class="block-18 text-center py-4 mb-4">
-                  <div class="text">
-                    
-                    <strong class="number"></strong></strong><strong class="number">8-20%</strong>
-                    <span>Vin</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 justify-content-center counter-wrap ftco-animate">
-                <div class="block-18 text-center py-4 mb-4">
-                  <div class="text">
-                    
-                    <strong class="number"></strong><strong class="number">40-47%</strong>
-                    <span>Gin</span>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="col-md-3 justify-content-center counter-wrap ftco-animate">
-                <div class="block-18 text-center py-4 mb-4">
-                  <div class="text">
-                    
-                    <strong class="number"></strong><strong class="number">40%+</strong>
-                    <span>Rom</span>
-                  </div>
-                </div>
-              </div>
-              
-
-              <div class="col-md-3 justify-content-center counter-wrap ftco-animate" style="margin-left: 15%; margin-top: -10%;" >
-                <div class="block-18 text-center py-4 mb-4">
-                  <div class="text">
-                    
-                    <strong class="number"></strong><strong class="number">40-50%</strong>
-                    <span>Vodka</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="col-md-3 justify-content-center counter-wrap ftco-animate" style="margin-left: 10%; margin-top: -10%;">
-                <div class="block-18 text-center py-4 mb-4">
-                  <div class="text">
-                    
-                    <strong class="number"></strong><strong class="number">40-50%</strong>
-                    <span>Whiskey</span>
-                  </div>
-                </div>
-              </div>
-              
-
-              
-
-
-              
-
-              
-            </div>
           </div>
         </div>
       </div>
     </section>
 
 
-
-    <section class="ftco-counter" id="section-counter">
-      <div class="container">
-        <div class="row d-flex no-gutters">
-          <div class="col-md-14 px-md-5 py-4 py-md-5">
-            <div class="row justify-content-start pt-md-3 pb-md-3">
-              <div class="col-md-12 heading-section ftco-animate px-md-5 py-4 py-md-5">
-                <h2 class="mb-4">Efectele alcoolului asupra corpului</h2>
-                <p>Alcoolul este absorbit în fluxul sanguin prin vasele mici de sânge din pereții stomacului și ai intestinului subțire. În doar câteva minute de la consumul de alcool, acesta ajunge de la stomac la creier, unde efectele își fac simțită prezența foarte rapid, încetinind acțiunea celulelor nervoase.<br><br>
-                  Aproximativ 20% din alcool este absorbit prin stomac. Restul de 80% este absorbit prin intestinul subțire.
-                  <br><br>
-               Alcoolul este dus de către sânge și înspre ficat, care elimină alcoolul din corp printr-un proces numit „metabolizare”, prin care este transformat într-o substanță non-toxică. Ficatul poate metaboliza doar o anumită cantitate de alcool într-un anumit interval de timp, surplusul de cantitate rămânând să circule prin corp. În felul acesta, intensitatea efectelor asupra corpului este direct proporțională cu cantitatea de alcool consumată.<br><br>
-
-               Când cantitatea de alcool din sânge depășește un anumit nivel, sistemul respirator este încetinit, cauzând astfel starea de comă sau chiar moarte, deoarece în felul acesta oxigenul nu mai ajunge la creier.
-
-              </p>
-
-             
-              </div>
-
-              <div class="col-md-6 d-flex flex-column align-items-stretch">
-               <center><h2 class="mb-4" style="font-weight: 700;">Efecte pe termen scurt ale consumului de alcool</h2></center>
-              <ul>
-                <li>Vorbire neclară</li>
-                <li>Vărsături</li>
-                <li>Diaree</li>
-                <li>Lipsă de coordonare a mișcărilor</li>
-                <li>Dureri de cap</li>
-                <li>Respirație dificilă</li>
-                <li>Anemie</li>
-                <li>Comă</li>
-                <li>Leșin</li>
-                <li>Somnolență</li>
-
-              </ul>
-          </div>
-
-
-           <div class="col-md-6 d-flex flex-column align-items-stretch">
-            
-           <center><h2 class="mb-4" style="font-weight: 700;">Efecte pe termen lung ale consumului de alcool</h2></center>
-              <ul>
-                <li>Vorbire neclară</li>
-                <li>Vărsături</li>
-                <li>Diaree</li>
-                <li>Lipsă de coordonare a mișcărilor</li>
-                <li>Dureri de cap</li>
-                <li>Respirație dificilă</li>
-                <li>Anemie</li>
-                <li>Comă</li>
-                <li>Leșin</li>
-                <li>Somnolență</li>
-
-              </ul>
-          </div>
-
-
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-
-
-    
-
-
-
-
-<section class="ftco-counter" id="section-counter" style="margin-top: 0%">
-      <div class="container">
-        <div class="row d-flex no-gutters">
-
-          <div class="col-md-6 d-flex flex-column align-items-stretch">
-            
-          </div>
-
-          <div class="col-md-6 px-md-5 py-4 py-md-5">
-            
-          
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-
-    <section class="ftco-counter" id="section-counter">
-      <div class="container">
-        <div class="row d-flex no-gutters">
-          <div class="col-md-6 d-flex flex-column align-items-stretch">
-            <div class="img d-flex align-self-stretch align-items-center justify-content-center" style="background-image:url({% static 'alcoolul/images/body.jpg' %});">
-              
-            </div>
-          </div>
-          <div class="col-md-6 px-md-5 py-4 py-md-5">
-            <div class="row justify-content-start pt-md-3 pb-md-3">
-              <div class="col-md-12 heading-section ftco-animate">
-                <h2 class="mb-4">Consumul de alcool și șofatul </h2>
-                <p><span style="color: #ff5050;">Probabilitatea ca un șofer aflat sub influența alcoolului să fie ucis într-un accident rutier este de cel puțin 11 ori mai ridicată</span> decât în cazul șoferilor care nu conduc sub influența alcoolului.><br><br>
-
-Pentru unii oameni această informație nu reprezintă decât o statistică. Însă pentru familiile și prietenii celor care mor în urma unui asemenea accident, ea reprezintă o pierdere tragică.<br><br>
-
-Alcoolul alterează gândirea și judecata unei persoane. Persoanele care se află sub influența alcoolului recunosc fără ezitare că viteza lor de reacție este mult încetinită când consumă alcool și că iau decizii pe care, lucizi fiind, nu le-ar lua niciodată. 
-
-              </p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="ftco-section bg-light">
-    	<div class="container">
-    		<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-12 text-center heading-section heading-section-light ftco-animate">
-            <h2 class="mb-2"><span class="px-4">Ce înseamnă binge drinking („beția ocazională”)?</span></h2>
-          </div>
-        </div>
-    		<div class="row d-flex sermon-wrap">
-  				<div class="col-md-6 d-flex align-items-stretch ftco-animate">
-  					<div class="img" style="background-image: url({% static 'alcoolul/images/step.jpg' %});"></div>
-  				</div>
-  				<div class="col-md-6 py-4 text ftco-animate">
-  					
-						<p>Binge drinking este practica de a consuma alcool în cantități excesive cu o anumită ocazie, de obicei cinci sau mai multe băuturi deodată în cazul bărbaților sau 4 sau mai multe băuturi deodată în cazul femeilor. 
-</p>
-						<p class="mt-4 btn-customize">
-							<a href="https://www.youtube.com/watch?v=Nu6A-eZ05fE&t=30s" class="btn btn-primary px-4 py-3 mr-md-2 popup-vimeo"><span style="padding-right: 5px;"></span>Drink water</a> 
-						</p>
-  				</div>
-    		</div>
-    	</div>
-    </section>
-		
 
 
 		
